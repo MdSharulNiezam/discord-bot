@@ -17,12 +17,20 @@ client.on('ready', (c) => {
 client.on('messageCreate', (message) => {
     console.log(message.content);
     console.log(message);
+    if (message.author.bot) {
+        return;
+    };
+
+    if (message.content === 'UwU') {
+        message.reply('UwU')
+    };
+
     if (message.content === 'Hello') {
         message.reply('Yes master, I am here');
     };
     if (message.content === 'Who are you to me') {
         message.reply('I am your slave, master')
-    }
+    };
 })
 
 client.on('message', msg => {
