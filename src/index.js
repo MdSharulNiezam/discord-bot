@@ -14,31 +14,36 @@ client.on('ready', (c) => {
     console.log(`${c.user.tag} is online`);
 });
 
-// client.on('messageCreate', (message) => {
-//     console.log(message.content);
-//     console.log(message);
-//     if (message.author.bot) {
-//         return;
-//     };
+client.on('messageCreate', (message) => {
+    console.log(message.content);
+    console.log(message);
+    if (message.author.bot) {
+        return;
+    };
 
-//     if (message.content === 'UwU') {
-//         message.reply('UwU')
-//     };
+    if (message.content === 'hey') {
+        message.reply('Yes Master, I am ready');
+    }
 
-//     if (message.content === 'Hello') {
-//         message.reply('Yes master, I am here');
-//     };
-//     if (message.content === 'Who are you to me') {
-//         message.reply('I am your slave, master')
-//     };
-// })
+    // if (message.content === 'UwU') {
+    //     message.reply('UwU')
+    // };
+
+    // if (message.content === 'Hello') {
+    //     message.reply('Yes master, I am here');
+    // };
+    // if (message.content === 'Who are you to me') {
+    //     message.reply('I am your slave, master')
+    // };
+})
 
 client.on('interactionCreate', (interaction) => {
-    if (interaction.isChatInputCommand()) return;
+    if (interaction.isChatInputCommand()) 
 
     if (interaction.commandName === 'hey') {
         interaction.reply('hey');
     }
+    return;
 });
 
 // client.on('message', msg => {
