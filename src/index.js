@@ -40,8 +40,8 @@ client.on('messageCreate', (message) => {
 client.on('interactionCreate', (interaction) => {
     if (interaction.isChatInputCommand()) 
 
-    if (interaction.commandName === 'hey') {
-        interaction.reply('hey');
+    if (interaction.commandName === 'hello') {
+        interaction.reply('Where are you, My master UwU');
     }
     return;
 });
