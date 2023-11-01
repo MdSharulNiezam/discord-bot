@@ -22,18 +22,18 @@ client.on('messageCreate', (message) => {
     };
 
     if (message.content === 'hey') {
-        message.reply('Yes Master, I am ready');
+        message.reply('Yes, I am here');
     }
 
-    // if (message.content === 'UwU') {
-    //     message.reply('UwU')
+    // if (message.content === 'You good?') {
+    //     message.reply('Nope')
     // };
 
     // if (message.content === 'Hello') {
-    //     message.reply('Yes master, I am here');
+    //     message.reply('Testing 123');
     // };
     // if (message.content === 'Who are you to me') {
-    //     message.reply('I am your slave, master')
+    //     message.reply('I am your discord bot')
     // };
 })
 
@@ -41,7 +41,7 @@ client.on('interactionCreate', (interaction) => {
     if (interaction.isChatInputCommand()) 
 
     if (interaction.commandName === 'hello') {
-        interaction.reply('Where are you, My master UwU');
+        interaction.reply('I am here');
     }
     return;
 });
