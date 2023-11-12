@@ -1,5 +1,5 @@
 const { Client, IntentsBitField } = require('discord.js');
-const { token } = require('./config.json');
+const { DISCORD_BOT_TOKEN } = require('./config.json');
 
 const client = new Client({
     intents: [
@@ -52,4 +52,4 @@ client.on('interactionCreate', (interaction) => {
 //     }
 // });
 
-client.login(token);
+client.login(DISCORD_BOT_TOKEN);
